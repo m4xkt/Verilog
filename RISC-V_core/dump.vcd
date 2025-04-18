@@ -1,0 +1,325 @@
+$date
+	Fri Apr 18 22:38:13 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module rom_fetcher $end
+$var wire 1 ! clk $end
+$var wire 16 " q [15:0] $end
+$var wire 8 # pc_next [7:0] $end
+$var reg 8 $ pc [7:0] $end
+$scope module rom $end
+$var wire 32 % addr [31:0] $end
+$var wire 16 & q [15:0] $end
+$var parameter 32 ' LENGTH $end
+$var parameter 32 ( WIDTH $end
+$upscope $end
+$upscope $end
+$scope module testbench $end
+$var reg 1 ) clk $end
+$scope module cpu_top $end
+$var wire 1 ) clk $end
+$var wire 32 * instr_data [31:0] $end
+$var wire 32 + instr_addr [31:0] $end
+$scope module core $end
+$var wire 32 , alu_b_src [31:0] $end
+$var wire 1 ) clk $end
+$var wire 32 - last_pc [31:0] $end
+$var wire 5 . rf_raddr0 [4:0] $end
+$var wire 5 / rf_raddr1 [4:0] $end
+$var wire 5 0 rf_waddr [4:0] $end
+$var wire 32 1 rf_wdata [31:0] $end
+$var wire 5 2 rs2 [4:0] $end
+$var wire 5 3 rs1 [4:0] $end
+$var wire 1 4 rf_w $end
+$var wire 32 5 rf_rdata1 [31:0] $end
+$var wire 32 6 rf_rdata0 [31:0] $end
+$var wire 5 7 rd [4:0] $end
+$var wire 32 8 instr_addr [31:0] $end
+$var wire 32 9 instr [31:0] $end
+$var wire 32 : imm32 [31:0] $end
+$var wire 12 ; imm12 [11:0] $end
+$var wire 32 < alu_res [31:0] $end
+$var wire 1 = alu_op $end
+$var reg 32 > pc [31:0] $end
+$scope module alu $end
+$var wire 32 ? src_b [31:0] $end
+$var wire 32 @ src_a [31:0] $end
+$var wire 1 = op $end
+$var reg 32 A out [31:0] $end
+$upscope $end
+$scope module control $end
+$var wire 7 B opcode [6:0] $end
+$var wire 32 C instr [31:0] $end
+$var wire 3 D funct3 [2:0] $end
+$var reg 1 = alu_op $end
+$var reg 12 E imm12 [11:0] $end
+$var reg 1 4 rf_w $end
+$upscope $end
+$scope module rf $end
+$var wire 1 ) clk $end
+$var wire 5 F raddr0 [4:0] $end
+$var wire 5 G raddr1 [4:0] $end
+$var wire 5 H waddr [4:0] $end
+$var wire 32 I wdata [31:0] $end
+$var wire 1 4 we $end
+$var wire 32 J rdata1 [31:0] $end
+$var wire 32 K rdata0 [31:0] $end
+$upscope $end
+$upscope $end
+$scope module rom $end
+$var wire 32 L addr [31:0] $end
+$var wire 32 M q [31:0] $end
+$var parameter 32 N LENGTH $end
+$var parameter 32 O WIDTH $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100000 O
+b1000 N
+b10000 (
+b1000 '
+$end
+#0
+$dumpvars
+b101100000000001010010011 M
+b0 L
+b0 K
+bx J
+b1011 I
+b101 H
+b1011 G
+b0 F
+b1011 E
+b0 D
+b101100000000001010010011 C
+b10011 B
+b1011 A
+b0 @
+b1011 ?
+b0 >
+1=
+b1011 <
+b1011 ;
+b1011 :
+b101100000000001010010011 9
+b0 8
+b101 7
+b0 6
+bx 5
+14
+b0 3
+b1011 2
+b1011 1
+b101 0
+b1011 /
+b0 .
+b1110000 -
+b1011 ,
+b0 +
+b101100000000001010010011 *
+0)
+b1010010011 &
+b0 %
+b0 $
+b1 #
+b1010010011 "
+z!
+$end
+#10
+b0 5
+b0 J
+b0 1
+b0 I
+b0 <
+b0 A
+b0 /
+b0 G
+b0 2
+b111 0
+b111 H
+b111 7
+b0 ,
+b0 ?
+b0 :
+b0 ;
+b0 E
+1=
+14
+b1110010011 *
+b1110010011 9
+b1110010011 C
+b1110010011 M
+b100 L
+b10000 +
+b10000 8
+b10000 >
+1)
+#20
+0)
+#30
+bx 5
+bx J
+b1011 6
+b1011 @
+b1011 K
+b10100 1
+b10100 I
+b10100 <
+b10100 A
+b1001 /
+b1001 G
+b1001 2
+b101 .
+b101 F
+b101 3
+b1001 ,
+b1001 ?
+b1001 :
+b1001 ;
+b1001 E
+1=
+14
+b100100101000001110010011 *
+b100100101000001110010011 9
+b100100101000001110010011 C
+b100100101000001110010011 M
+b1000 L
+b100000 +
+b100000 8
+b100000 >
+1)
+#40
+0)
+#50
+b0 5
+b0 J
+b0 6
+b0 @
+b0 K
+b0 1
+b0 I
+b0 <
+b0 A
+b0 /
+b0 G
+b0 2
+b0 .
+b0 F
+b0 3
+b0 0
+b0 H
+b0 7
+b0 ,
+b0 ?
+b0 :
+b0 ;
+b0 E
+1=
+14
+b10011 *
+b10011 9
+b10011 C
+b10011 M
+b1100 L
+b110000 +
+b110000 8
+b110000 >
+1)
+#60
+0)
+#70
+b1011 0
+b1011 H
+b1011 7
+1=
+14
+b10110010011 *
+b10110010011 9
+b10110010011 C
+b10110010011 M
+b10000 L
+b1000000 +
+b1000000 8
+b1000000 >
+1)
+#80
+0)
+#90
+b10100 1
+b10100 I
+b10100 <
+b10100 A
+b10100 6
+b10100 @
+b10100 K
+b111 .
+b111 F
+b111 3
+1=
+14
+b111000010110010011 *
+b111000010110010011 9
+b111000010110010011 C
+b111000010110010011 M
+b10100 L
+b1010000 +
+b1010000 8
+b1010000 >
+1)
+#100
+0)
+#110
+b0 1
+b0 I
+b0 <
+b0 A
+b0 6
+b0 @
+b0 K
+b1101111 B
+b0 .
+b0 F
+b0 3
+b0 0
+b0 H
+b0 7
+0=
+04
+b1101111 *
+b1101111 9
+b1101111 C
+b1101111 M
+b11000 L
+b1100000 +
+b1100000 8
+b1100000 >
+1)
+#120
+0)
+#130
+1=
+14
+b10011 B
+b10011 *
+b10011 9
+b10011 C
+b10011 M
+b11100 L
+b1110000 +
+b1110000 8
+b1110000 >
+1)
+#140
+0)
+#150
+1)
+#160
+0)
