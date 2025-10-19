@@ -1,0 +1,283 @@
+$date
+	Sat May 17 12:51:31 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module test $end
+$var wire 7 ! d_out [6:0] $end
+$var parameter 32 " ADDR_SIZE $end
+$var parameter 32 # DATA_W $end
+$var parameter 32 $ MEM_SIZE $end
+$var reg 6 % addr_r [5:0] $end
+$var reg 6 & addr_w [5:0] $end
+$var reg 1 ' clk $end
+$var reg 7 ( d_in [6:0] $end
+$var reg 1 ) r $end
+$var reg 1 * w $end
+$scope module joke $end
+$var wire 6 + addr_r [5:0] $end
+$var wire 6 , addr_w [5:0] $end
+$var wire 1 ' clk $end
+$var wire 7 - datain [6:0] $end
+$var wire 1 ) read $end
+$var wire 1 * write $end
+$var parameter 32 . ADDR_SIZE $end
+$var parameter 32 / DATA_W $end
+$var parameter 32 0 MEM_SIZE $end
+$var reg 6 1 addr_r_prev [5:0] $end
+$var reg 7 2 dataout [6:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b110 0
+b111 /
+b110 .
+b110 $
+b111 #
+b110 "
+$end
+#0
+$dumpvars
+bx 2
+bx 1
+b0 -
+b0 ,
+b0 +
+0*
+0)
+b0 (
+1'
+b0 &
+b0 %
+bx !
+$end
+#10
+0'
+#20
+b0 1
+1'
+b1 &
+b1 ,
+1)
+1*
+b1 (
+b1 -
+#30
+0'
+#40
+1'
+#50
+0'
+#60
+1'
+b1 %
+b1 +
+b10 &
+b10 ,
+0)
+0*
+b10 (
+b10 -
+#70
+0'
+#80
+1'
+#90
+0'
+#100
+b10 1
+1'
+b10 %
+b10 +
+b101 &
+b101 ,
+1)
+1*
+b11 (
+b11 -
+#110
+0'
+#120
+1'
+#130
+0'
+#140
+b11 !
+b11 2
+b101 1
+1'
+b101 %
+b101 +
+b10 &
+b10 ,
+b100 (
+b100 -
+#150
+0'
+#160
+1'
+#170
+0'
+#180
+1'
+b10 %
+b10 +
+b100 &
+b100 ,
+0)
+b101 (
+b101 -
+#190
+0'
+#200
+1'
+#210
+0'
+#220
+1'
+b100 %
+b100 +
+b11 &
+b11 ,
+b100111 (
+b100111 -
+#230
+0'
+#240
+1'
+#250
+0'
+#260
+b11 !
+b11 2
+b11 1
+1'
+b11 %
+b11 +
+1)
+0*
+b0 (
+b0 -
+#270
+0'
+#280
+b100111 !
+b100111 2
+1'
+#290
+0'
+#300
+1'
+b101 %
+b101 +
+0)
+#310
+0'
+#320
+1'
+#330
+0'
+#340
+1'
+#350
+0'
+#360
+1'
+#370
+0'
+#380
+1'
+#390
+0'
+#400
+1'
+#410
+0'
+#420
+1'
+#430
+0'
+#440
+1'
+#450
+0'
+#460
+1'
+#470
+0'
+#480
+1'
+#490
+0'
+#500
+1'
+#510
+0'
+#520
+1'
+#530
+0'
+#540
+1'
+#550
+0'
+#560
+1'
+#570
+0'
+#580
+1'
+#590
+0'
+#600
+1'
+#610
+0'
+#620
+1'
+#630
+0'
+#640
+1'
+#650
+0'
+#660
+1'
+#670
+0'
+#680
+1'
+#690
+0'
+#700
+1'
+#710
+0'
+#720
+1'
+#730
+0'
+#740
+1'
+#750
+0'
+#760
+1'
+#770
+0'
+#780
+1'
+#790
+0'
+#800
+1'
+#810
+0'
+#820
+1'
